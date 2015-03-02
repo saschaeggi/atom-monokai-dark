@@ -145,3 +145,18 @@
     background-color: @const;
   }
 }
+
+@import "ui-variables";
+
+tabs-tab.active, .tab.active {
+  color: @text-color-selected !important;
+  background: @background-color-selected !important;
+
+  &:after {
+    border-bottom: @base-border-color !important;
+  }
+}
+
+atom-text-editor, .gutter, .line-numbers {
+  background: darken(@app-background-color,4) !important;
+}
